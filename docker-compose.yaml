@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  notebook:
+    image: jupyter/scipy-notebook:2ce7c06a61a1  # built 10 August, 2019
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work
+    environment:
+      NB_UID: 501
